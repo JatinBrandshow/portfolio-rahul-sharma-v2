@@ -8,7 +8,7 @@ const HeroSection = () => {
     return (
         <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col lg:flex-row gap-10">
             {/* Left Panel */}
-            <div className="flex flex-col items-center lg:w-1/3 text-center p-6 rounded-xl bg-gray-900 bg-opacity-60 shadow-[0_4px_30px_rgba(255,165,0,0.5)]">
+            <div className="flex flex-col items-center lg:w-1/3 text-center p-6 card">
                 <div className="relative w-64 h-64">
                     <Image
                         src="/image/rahul.webp"
@@ -17,13 +17,13 @@ const HeroSection = () => {
                         className="rounded-full object-cover border-4 border-orange-500"
                     />
                 </div>
-                <h2 className="mt-6 text-2xl font-bold text-white">Rahul Sharma</h2>
-                <p className="text-gray-400 mt-1">
+                <h2 className="mt-6 text-2xl font-bold text-gray-900">Rahul Sharma</h2>
+                <p className="text-gray-600 mt-1">
                     <a
                         href="https://www.taltech.ee/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="hover:text-orange-500 transition"
+                        className="hover:text-orange-500"
                     >
                         Tallinn University of Technology
                     </a>
@@ -31,26 +31,23 @@ const HeroSection = () => {
 
                 {/* Social Links */}
                 <div className="flex gap-4 mt-4 justify-center">
-                    <a href="#" className="text-gray-400 hover:text-orange-500 transition">
-                        FB
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-orange-500 transition">
-                        X
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-orange-500 transition">
-                        LinkedIn
-                    </a>
-                    <a href="#" className="text-gray-400 hover:text-orange-500 transition">
-                        GitHub
-                    </a>
+                    {["FB", "X", "LinkedIn", "GitHub"].map((platform) => (
+                        <a
+                            key={platform}
+                            href="#"
+                            className="text-gray-500 hover:text-orange-500 transition-colors"
+                        >
+                            {platform}
+                        </a>
+                    ))}
                 </div>
             </div>
 
             {/* Right Panel */}
-            <div className="lg:w-2/3 flex flex-col justify-center gap-4 p-6 rounded-xl bg-gray-900 bg-opacity-60 shadow-[0_4px_30px_rgba(255,165,0,0.5)]">
-                <p className="text-gray-400">Welcome to my personal portfolio</p>
+            <div className="lg:w-2/3 flex flex-col justify-center gap-4 p-8 card">
+                <p className="text-gray-600">Welcome to my personal portfolio</p>
 
-                <h1 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
                     I'm{" "}
                     <span className="text-orange-500">
                         <Typewriter
@@ -65,10 +62,9 @@ const HeroSection = () => {
                     </span>
                 </h1>
 
-                {/* New About Section */}
-                <div className="text-gray-300 space-y-4 max-h-[500px] overflow-y-auto">
+                <div className="text-gray-700 space-y-4 max-h-[400px] overflow-y-auto">
                     <p>
-                        Passionate about computer science and cutting-edge research, I specialize in association rule mining, machine learning, and algorithmic fairness. This portfolio showcases my projects, publications, and contributions to the field.
+                        Passionate about computer science and cutting-edge research, I specialize in <strong className="text-gray-900">association rule mining, machine learning, and algorithmic fairness</strong>. This portfolio showcases my projects, publications, and contributions to the field.
                     </p>
                 </div>
             </div>

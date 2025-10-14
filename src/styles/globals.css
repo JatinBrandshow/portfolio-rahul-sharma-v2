@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
+/* Default Light Theme */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #ffffff; /* pure white background */
+  --foreground: #1f2937; /* dark gray text for readability */
+  --accent: #f97316; /* orange accent color */
+  --card-bg: #fff7f5; /* very light peach for cards */
+  --card-shadow: rgba(0, 0, 0, 0.05); /* subtle shadow */
+  --font-sans: Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
 }
 
+/* Inline theme variables */
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Styles */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Links */
+a {
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #ffb347; /* lighter accent on hover */
+}
+
+/* Card style helper class */
+.card {
+  background-color: var(--card-bg);
+  box-shadow: 0 8px 20px var(--card-shadow);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--card-shadow);
 }
