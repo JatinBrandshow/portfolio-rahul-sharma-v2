@@ -10,10 +10,8 @@ const Publications = () => {
       id="publications"
       className="relative max-w-6xl mx-auto px-6 py-20 overflow-hidden bg-white"
     >
-      <h2 className="text-4xl font-extrabold text-center text-gray-900 mb-20 relative z-10">
-       
-          Publications
-      
+      <h2 className="text-4xl font-bold text-center text-gray-900 mb-20 relative z-10">
+        Publications
       </h2>
 
       <div className="space-y-20 relative z-10">
