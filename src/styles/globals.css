@@ -2,11 +2,11 @@
 
 /* Default Light Theme */
 :root {
-  --background: #ffffff; /* pure white background */
-  --foreground: #1f2937; /* dark gray text for readability */
- --accent: #1e3a8a; /* blue-900 */
-  --card-bg: #fff7f5; /* very light peach for cards */
-  --card-shadow: rgba(0, 0, 0, 0.05); /* subtle shadow */
+  --background: #ffffff;
+  --foreground: #1f2937;
+  --accent: #1e3a8a;
+  --card-bg: #fff7f5;
+  --card-shadow: rgba(0, 0, 0, 0.05);
   --font-sans: Arial, Helvetica, sans-serif;
   --font-mono: monospace;
 }
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #2563eb; /* lighter accent on hover */
+  color: #2563eb;
 }
 
 /* Card style helper class */
