@@ -6,12 +6,12 @@ import { FaBrain, FaChartLine, FaRobot, FaNetworkWired, FaProjectDiagram } from 
 
 const About = () => {
   const interests = [
-    { icon: <FaBrain className="text-orange-500 w-5 h-5" />, label: "Algorithmic fairness and biasness" },
-    { icon: <FaRobot className="text-orange-500 w-5 h-5" />, label: "Explainable and Trustworthy AI" },
-    { icon: <FaChartLine className="text-orange-500 w-5 h-5" />, label: "Statistical paradoxes (e.g., Simpson's Paradox)" },
-    { icon: <FaNetworkWired className="text-orange-500 w-5 h-5" />, label: "Causal/confounding effects in ML" },
-    { icon: <FaBrain className="text-orange-500 w-5 h-5" />, label: "Machine Learning" },
-    { icon: <FaProjectDiagram className="text-orange-500 w-5 h-5" />, label: "Generalized Association Rule Mining" },
+    { icon: <FaBrain className="text-blue-900 w-5 h-5" />, label: "Algorithmic fairness and biasness" },
+    { icon: <FaRobot className="text-blue-900 w-5 h-5" />, label: "Explainable and Trustworthy AI" },
+    { icon: <FaChartLine className="text-blue-900 w-5 h-5" />, label: "Statistical paradoxes (e.g., Simpson's Paradox)" },
+    { icon: <FaNetworkWired className="text-blue-900 w-5 h-5" />, label: "Causal/confounding effects in ML" },
+    { icon: <FaBrain className="text-blue-900 w-5 h-5" />, label: "Machine Learning" },
+    { icon: <FaProjectDiagram className="text-blue-900 w-5 h-5" />, label: "Generalized Association Rule Mining" },
   ];
 
   return (
@@ -24,7 +24,7 @@ const About = () => {
         className="text-center space-y-3"
       >
         <h2 className="text-4xl font-bold text-gray-900">About Me</h2>
-        <p className="text-orange-500 text-xl">Tallinn University of Technology</p>
+        <p className="text-blue-900 text-xl">Tallinn University of Technology</p>
       </motion.div>
 
       {/* Overview */}
@@ -44,7 +44,7 @@ const About = () => {
           He is passionate about exploring <strong className="text-gray-900">association rule mining, machine learning, algorithmic fairness,</strong> 
           and the <strong className="text-gray-900">role of statistical paradoxes</strong> in AI, ML, and big data applications. His research broadly includes:
         </p>
-        <p className="text-gray-500 italic text-lg relative before:absolute before:-left-6 before:top-0 before:w-1 before:h-full before:bg-orange-500 pl-6">
+        <p className="text-gray-500 italic text-lg relative before:absolute before:-left-6 before:top-0 before:w-1 before:h-full before:bg-blue-900 pl-6">
           "Passionate about leveraging AI for fair, transparent, and trustworthy outcomes."
         </p>
       </motion.div>
@@ -59,7 +59,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="flex-1 p-8 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300"
         >
-          <h3 className="text-2xl font-bold text-orange-500 mb-6">Research Interests</h3>
+          <h3 className="text-2xl font-bold text-blue-900 mb-6">Research Interests</h3>
           <ul className="space-y-3 text-gray-700">
             {interests.map((item, i) => (
               <li key={i} className="flex items-center gap-3">
@@ -78,7 +78,7 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="flex-1 p-8 rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300"
         >
-          <h3 className="text-2xl font-bold text-orange-500 mb-6">Experience</h3>
+          <h3 className="text-2xl font-bold text-blue-900 mb-6">Experience</h3>
           <p className="text-gray-700 mb-4">
             Over twelve years of experience in education, consulting, and independent research.
           </p>

@@ -35,7 +35,7 @@ const Publications = () => {
                 initial={{ scale: 0 }}
                 whileInView={{ scale: 1 }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                className="text-white text-sm font-bold px-5 py-2 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 shadow-md"
+                className="text-white text-sm font-bold px-5 py-2 rounded-full bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 shadow-md"
               >
                 {pub.year}
               </motion.span>
@@ -43,17 +43,17 @@ const Publications = () => {
                 initial={{ height: 0 }}
                 whileInView={{ height: "80px" }}
                 transition={{ duration: 0.6 }}
-                className="w-[2px] bg-gradient-to-b from-orange-400 to-transparent mt-4"
+                className="w-[2px] bg-gradient-to-b from-blue-700 to-transparent mt-4"
               ></motion.div>
             </div>
 
             {/* Main publication details */}
             <div className="md:w-4/5 space-y-2">
-              <h3 className="text-2xl md:text-3xl font-bold leading-snug hover:text-orange-600 transition-colors duration-300">
+              <h3 className="text-2xl md:text-3xl font-bold leading-snug hover:text-blue-900 transition-colors duration-300">
                 {pub.title}
               </h3>
               <p className="text-gray-600 italic text-sm">{pub.authors}</p>
-              <p className="text-orange-700 font-medium">{pub.journal}</p>
+              <p className="text-blue-800 font-medium">{pub.journal}</p>
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
@@ -72,7 +72,7 @@ const Publications = () => {
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         transition={{ duration: 1.2 }}
-        className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-orange-500 via-pink-500 to-transparent origin-left"
+        className="absolute bottom-0 left-0 w-full h-[3px] bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 origin-left"
       ></motion.div>
     </section>
   );

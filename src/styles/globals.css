@@ -4,7 +4,7 @@
 :root {
   --background: #ffffff; /* pure white background */
   --foreground: #1f2937; /* dark gray text for readability */
-  --accent: #f97316; /* orange accent color */
+ --accent: #1e3a8a; /* blue-900 */
   --card-bg: #fff7f5; /* very light peach for cards */
   --card-shadow: rgba(0, 0, 0, 0.05); /* subtle shadow */
   --font-sans: Arial, Helvetica, sans-serif;
@@ -36,7 +36,7 @@ a {
 }
 
 a:hover {
-  color: #ffb347; /* lighter accent on hover */
+  color: #2563eb; /* lighter accent on hover */
 }
 
 /* Card style helper class */

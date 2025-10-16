@@ -33,7 +33,7 @@ const News = () => {
         transition={{ duration: 0.6 }}
         className="text-4xl font-bold text-center text-gray-900 mb-12"
       >
-        Latest <span className="text-orange-500">News</span>
+        Latest <span className="text-blue-900">News</span>
       </motion.h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -45,13 +45,13 @@ const News = () => {
             transition={{ duration: 0.5, delay: index * 0.15 }}
             viewport={{ once: true }}
             whileHover={{ scale: 1.04 }}
-            className="relative bg-white/70 backdrop-blur-md border border-orange-100 rounded-2xl p-6 shadow-lg hover:shadow-[0_10px_30px_rgba(255,165,0,0.25)] transition-all duration-300"
+            className="relative bg-white/70 backdrop-blur-md border border-blue-100 rounded-2xl p-6 shadow-lg hover:shadow-[0_10px_30px_rgba(30,58,138,0.25)] transition-all duration-300"
           >
             {/* Glow Line Top */}
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-orange-500 to-yellow-400 rounded-t-2xl opacity-70"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-blue-700 via-blue-800 to-blue-900 rounded-t-2xl opacity-70"></div>
 
             {/* Date */}
-            <p className="text-sm font-semibold text-orange-600 mb-3 tracking-wide">
+            <p className="text-sm font-semibold text-blue-900 mb-3 tracking-wide">
               {news.date}
             </p>
 
@@ -65,7 +65,7 @@ const News = () => {
               href={news.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm font-medium text-orange-600 hover:text-orange-700 transition-colors"
+              className="inline-flex items-center gap-2 text-sm font-medium text-blue-900 hover:text-blue-700 transition-colors"
             >
               Read More
               <motion.span
@@ -79,7 +79,7 @@ const News = () => {
 
             {/* Animated Border on Hover */}
             <motion.div
-              className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-orange-400/60 transition-all duration-500"
+              className="absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-blue-900/60 transition-all duration-500"
               whileHover={{ scale: 1.02 }}
             ></motion.div>
           </motion.div>

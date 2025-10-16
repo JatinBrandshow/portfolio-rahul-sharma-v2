@@ -20,7 +20,7 @@ const HeroSection = () => {
             src="/image/rahul.webp"
             alt="Rahul Sharma"
             fill
-            className="rounded-full object-cover border-4 border-orange-500"
+            className="rounded-full object-cover border-4 border-blue-900"
           />
         </div>
 
@@ -30,7 +30,7 @@ const HeroSection = () => {
             href="https://www.taltech.ee/"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-orange-500 transition-colors duration-300 font-medium"
+            className="hover:text-blue-900 transition-colors duration-300 font-medium"
           >
             Tallinn University of Technology
           </a>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               href="#"
               whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.95 }}
-              className="text-gray-500 hover:text-orange-500 transition-colors duration-300 text-lg font-semibold"
+              className="text-gray-500 hover:text-blue-900 transition-colors duration-300 text-lg font-semibold"
             >
               {platform}
             </motion.a>
@@ -63,7 +63,7 @@ const HeroSection = () => {
 
         <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
           I'm{" "}
-          <span className="text-orange-500">
+          <span className="text-blue-900">
             <Typewriter
               words={["Rahul Sharma", "a Dynamic CS Researcher"]}
               loop={true}
@@ -96,8 +96,8 @@ const HeroSection = () => {
       </motion.div>
 
       {/* Optional: subtle background shapes */}
-      <div className="absolute -z-10 w-60 h-60 bg-orange-100 rounded-full top-12 right-10 blur-3xl"></div>
-      <div className="absolute -z-10 w-48 h-48 bg-pink-100 rounded-full bottom-0 left-0 blur-2xl"></div>
+      <div className="absolute -z-10 w-60 h-60 bg-blue-900/10 rounded-full top-12 right-10 blur-3xl"></div>
+      <div className="absolute -z-10 w-48 h-48 bg-blue-900/5 rounded-full bottom-0 left-0 blur-2xl"></div>
     </section>
   );
 };

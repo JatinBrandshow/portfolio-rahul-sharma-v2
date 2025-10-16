@@ -13,14 +13,14 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="bg-[#0f0f0f] text-gray-300 py-10 border-t border-gray-800">
+    <footer className="bg-[#0f0f0f] text-white py-10 border-t border-gray-800">
       {/* Social Icons */}
       <div className="flex justify-center gap-8 mb-4">
         {/* Email */}
         <a
-          href="mailto:%72%61%68%75%6C.%73%68%61%72%6D%61@%74%61%6C%74%65%63%68.%65%65"
-          title="email"
-          className="hover:text-orange-400 transition"
+          href="mailto:rahul.sharma@taltech.ee"
+          title="Email"
+          className="hover:text-[var(--accent)] transition"
           aria-label="Email"
         >
           <Mail size={32} />
@@ -32,7 +32,7 @@ const Footer = () => {
           title="ORCID"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="ORCID"
         >
           <Landmark size={32} />
@@ -44,7 +44,7 @@ const Footer = () => {
           title="Google Scholar"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="Google Scholar"
         >
           <GraduationCap size={32} />
@@ -56,7 +56,7 @@ const Footer = () => {
           title="ResearchGate"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="ResearchGate"
         >
           <Network size={32} />
@@ -68,7 +68,7 @@ const Footer = () => {
           title="GitHub"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="GitHub"
         >
           <Github size={32} />
@@ -80,7 +80,7 @@ const Footer = () => {
           title="Twitter"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="Twitter"
         >
           <Twitter size={32} />
@@ -92,7 +92,7 @@ const Footer = () => {
           title="Work"
           target="_blank"
           rel="noopener noreferrer"
-          className="hover:text-orange-400 transition"
+          className="hover:text-[var(--accent)] transition"
           aria-label="Portfolio"
         >
           <Briefcase size={32} />
@@ -100,24 +100,24 @@ const Footer = () => {
       </div>
 
       {/* Personal Email */}
-      <p className="text-center text-sm text-gray-400 mb-4">
-        You also can write to me on my personal email at{" "}
+      <p className="text-center text-sm mb-4">
+        You can also write to me on my personal email at{" "}
         <a
-          href="mailto:%72%61%68%75%6C.%73%68%61%72%6D%61@%74%61%6C%74%65%63%68.%65%65"
-          className="text-orange-400 hover:underline"
+          href="mailto:rahul.sharma@taltech.ee"
+          className="text-[var(--accent)] hover:underline transition"
         >
           rahul.sharma@taltech.ee
         </a>
       </p>
 
       {/* Bottom credit line */}
-      <div className="text-center text-xs text-gray-500 border-t border-gray-800 pt-4">
+      <div className="text-center text-xs text-gray-400 border-t border-gray-800 pt-4">
         Designed & Developed by{" "}
         <a
           href="https://brandshow.in"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-orange-400 hover:underline"
+          className="text-[var(--accent)] hover:underline transition"
         >
           Brandshow
         </a>
